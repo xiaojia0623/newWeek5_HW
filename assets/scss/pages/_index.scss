@@ -1,0 +1,185 @@
+//右邊主內容寬度
+.main{
+    width: calc(100vw - #{$sidebar-width});
+}
+
+//右邊上方標題
+.main-title{
+    padding:32px;
+    .assign-title{
+        h1{
+            font-size: $font-s-24;
+            line-height: 33px;
+            font-weight: bold;
+            margin-right: 50px;
+        }
+        h2{
+            font-size: $font-s-16;
+            line-height: 24px;
+            font-weight: bold;
+            align-items: center;
+            display: flex;
+            span{
+                font-size: $font-s-24;
+                margin-left: 9px;
+                padding: 2px;
+                color:$dark-green;
+                font-weight: bold;
+            }
+        }
+    }
+    .topIcon{
+        font-size: $font-s-24;
+    }
+}
+
+.mainContent{
+    padding: 32px;
+    .titleList{
+        width: 70%;
+        h2{
+            font-size: $font-s-16;
+            line-height: 24px;
+            font-weight: bold;
+            align-items: center;
+            display: flex;
+            span{
+                font-size: $font-s-24;
+                margin-left: 9px;
+                padding: 2px;
+                color:$dark-green;
+                font-weight: bold;
+            }
+        }
+    }
+    .mainList{
+        width:90%;
+        padding: 12px;
+        border: 1px solid #CED4DA;
+        &.active{
+            background-color: $lightBlue-bg;
+        }
+        .listContent{
+            p, span{
+                font-size: $font-s-12;
+                color:#212529;
+            }
+        }
+        .contentTitle{
+            h2{
+                font-size: $font-s-16;
+                font-weight: bold;
+                color:#212529;
+            }
+            span{
+                font-size: $font-s-12;
+                color:#6C757D;
+            }
+        }
+    }
+    .mainContentS{
+        width: 100%;
+        .commitNum{
+            color:#6C757D;
+            font-size: $font-s-12;
+            margin-bottom: 8px;
+        }
+        .mainContentSection{
+            border: 1px solid #CED4DA;
+            .firstContent{
+                background: $lightBlue-bg;
+                padding: 12px 16px;
+                border-bottom: 1px solid #CED4DA;
+                
+            }
+            .firstContentTitle{
+                p{
+                    font-size: $font-s-12;
+                }
+                span{
+                    font-size: $font-s-16;
+
+                }
+                .material-symbols-outlined{
+                    color:#212529;
+                }
+            }
+            .memberContent{
+                .memberInfo{
+                    padding: 17px 16px;
+                    margin-bottom: 16px;
+                }
+                .memberImg{
+                    img{
+                        width: 40px; height: 40px;
+                        border-radius: 50%;
+                        margin-right: 8px;
+                    }
+                }
+                .memberName{
+                    p{
+                        font-size: $font-s-16;
+                    }
+                    span{
+                        color:#6C757D;
+                        font-size: $font-s-12;
+                    }
+                }
+                .memContent{
+                    padding-left: 64px;
+                    padding-right: 32px;
+                    p{
+                        font-size: $font-s-14;
+                        line-height: 21px;
+                        margin-bottom: 16px;
+                        .greenWord{
+                            color:#198754;
+                            font-family: 'Roboto Mono';
+                        }
+                    }
+                    .btn{
+                        align-items: center;
+                        padding: 8px 12px;
+                        border-radius: 0;
+                        border:1px solid #CED4DA;
+                        span{
+                            width: 24px;  //attach_file
+                        }
+                        p{
+                            font-family: 'Loto';
+                            font-weight: bold;
+                            font-size: $font-s-16;
+                        }
+                    }
+                    hr{
+                        color:1px solid #CED4DA;
+                    }
+                    ul{
+                        list-style-type: disc;
+                        padding-left: 35px;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+.bottomSection{
+    padding-top: 22px;
+    padding-bottom: 37px;
+    .page{
+        display: inline-block;
+        justify-content: center;
+        span{
+            font-size: $font-s-24;
+            color:#000;
+        }
+    }
+    .greenBtn{
+        .btn{
+            padding:8px 32px;
+            font-size: $font-s-16;
+            font-weight: bold;
+        }
+    }
+}
